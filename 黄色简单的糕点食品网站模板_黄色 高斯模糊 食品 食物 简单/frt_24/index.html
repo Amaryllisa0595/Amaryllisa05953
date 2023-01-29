@@ -1,0 +1,114 @@
+<!doctype html>
+<!--
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+Coder: lsa, free.responsive.templates@gmail.com
+Created: 12 September 2012 
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Responsive Template #24 - FRT Mint-模板在线moobnn.com</title>
+<link href='http://fonts.googleapis.com/css?family=Headland+One|Skranji|McLaren' rel='stylesheet' type='text/css'>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+	 // DOM ready
+	 $(function() {
+	   
+      // Create the dropdown base
+      $("<select />").appendTo("nav");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Select a page"
+      }).appendTo("nav select");
+      
+      // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      
+	   // To make dropdown actually work
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+	 
+	 });
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+    	<h1><a href="">Brown Sugar</a></h1>
+        <span>Sucrose Sugar Product</span>
+        <img src="images/headerPic.jpg" alt="header pic">
+        <div class="clearfloat"></div>
+        <nav>
+            <ul>
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Recipes</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="clearfloat"></div>
+    </header>
+    <section>
+        <div class="boxes">
+            <ul>
+                <li>
+                    <h2>Muscovado</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    <img src="images/pic1.jpg" alt="pic1">
+                </li>
+                <li>
+                    <h2>Dark brown</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    <img src="images/pic2.jpg" alt="pic2">
+                </li>
+                <li class="lastBox">
+                    <h2>Light brown</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    <img src="images/pic3.jpg" alt="pic3">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="clearfloat"></div>
+    <section>
+    	<div class="welcome">
+        	<h2>Welcome to Mint</h2>
+            <p>
+            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div class="sidebar">
+        	<h2>Sidebar</h2>
+            <ul>
+            	<li><a href="">Lorem Ipsum is simply</a></li>
+                <li><a href="">Dummy text of the printing </a></li>
+                <li><a href="">And typesetting industry</a></li>
+                <li><a href="">Lorem Ipsum has been the</a></li>
+                <li><a href="">Industry's standard dummy</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="clearfloat"></div>
+    <footer> 
+        <p>
+            Copyright &copy; <a href="#">Your Site Name</a> | Collect Form <a href="http://www.moobnn.com/" title="模板在线">模板在线</a> <a href="http://guantaow.taobao.com" target="_blank">厚朴网络 淘宝店</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>

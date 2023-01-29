@@ -1,0 +1,219 @@
+/*
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+Coder: lsa, free.responsive.templates@gmail.com
+Created: 12 September 2012 
+*/
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: 'Headland One', serif;
+	font-size:100%;
+	background: url(../images/siteBackground.jpg);
+	margin: 0;
+	padding: 0;
+	color: #3d3b38;
+	text-shadow:0 0px, 1px 1px #f7eec7;
+}
+h1 {
+	padding:15px 0 0 0;
+	font-weight:inherit;
+}
+h1 a {
+	font-size:1.2em; 
+	color:#7e4200;
+	font-family: 'Skranji', cursive;
+	text-decoration:none;
+	line-height:10px;
+}
+h2 {
+	font-family: 'McLaren', cursive;
+	font-size:1.7142857142857142857142857142857em;
+	color:#7e4200;
+	font-weight:inherit;
+}
+span {
+	font-family: 'McLaren', cursive;
+	text-transform:uppercase;
+	color:#1b728f;
+	font-size:1em;
+}
+a img { 
+	border: none;
+}
+a {
+	color: #1b728f;
+	text-decoration: underline; 
+}
+a:hover { 
+	color: #095974;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;	
+}
+p {
+	line-height:140%;
+}
+.wrapper {
+	width:960px;
+	margin:0 auto;
+}
+header {
+	text-align:center;
+}
+header img {
+	margin:20px 0 0 0;
+	float:left;
+}
+.welcome {
+	width:64.166666666666666666666666666667%; /* 616px/960px */
+	float:left;
+	margin:20px 0 0 0;
+}
+.sidebar {
+	width:31.041666666666666666666666666667%; /* 298px/960px */
+	float:right;
+	margin:20px 0 0 0;
+}
+.sidebar li {
+    list-style: none;
+	width:100%;
+	border-bottom: 1px dotted #3d3b38;
+    box-shadow: 0 1px #f7eec7;
+}
+.sidebar li a {
+	background: url("../images/p.png") no-repeat scroll 7px 14px;
+    display: block;
+    padding: 7px 10px 7px 17px;
+	text-decoration:none;
+	color: #3d3b38;
+	text-shadow:0 0px, 1px 1px #f7eec7;
+}
+.sidebar li a:hover {
+	background:rgba(126, 66, 0, 0.3) url("../images/p.png") no-repeat scroll 7px 14px;
+	padding: 7px 10px 7px 17px;
+}
+.boxes li {
+	list-style:none;
+	width:26.599%;
+	display:block;
+	float:left;
+	margin-right:4%;
+	padding:2%;
+	background:none repeat scroll 0 0 rgba(126, 66, 0, 0.3);
+}
+.boxes li img {
+	box-shadow:1px 1px 0px 0 #f7eec7;
+	margin:10px 0 0 0;
+}
+.lastBox {
+	margin-right:0 !important;
+}
+footer {
+	text-align: center;
+	padding:20px 10px;
+	background:none repeat scroll 0 0 rgba(126, 66, 0, 0.3);
+	margin-top:20px;
+}
+footer p {
+	font-size:0.8571428571428571em; /* 12px/14px */
+}
+footer a {
+	color:#1b728f;
+	text-decoration:underline;
+}
+footer a:hover {
+	color:#095974;
+	text-decoration:none;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	line-height: 0px;
+}
+/**************************/
+/*********************************Begin main menu****************************************/
+/**************************/
+nav {
+	background:none repeat scroll 0 0 rgba(126, 66, 0, 0.3);
+	text-align:center;
+	padding:10px 0;
+	margin-bottom:20px;
+}
+nav li {
+	list-style:none;
+	display:inline;
+	padding:10px 0;
+}
+nav li a {
+	font-family: 'McLaren', cursive;
+	text-shadow:0 0px, 1px 1px #000000;
+	color:#f7eec7;
+	text-shadow:0 0px, 1px 1px #393939;
+	text-transform:uppercase;
+	text-decoration: none;
+	padding:10px 15px;
+}
+nav li a:hover {
+	background:#7e4200;
+	color:#f7eec7;
+}
+nav .active a {
+	background:#7e4200;
+}
+nav select {
+      display: none;
+    }
+select {
+	width:200px;
+}
+/**************************/
+/*********************************End main menu****************************************/
+/**************************/
+/*********************************Begin Media Queries****************************************/
+/**************************/
+/* for 960px or less */
+@media screen and (max-width: 980px) {
+	.wrapper {
+		width:93.75%; /* 960px/1024px  */
+		margin:0 auto;
+	}
+}
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	.welcome {
+		float:none;
+		width:auto;
+	}
+	.sidebar {
+		float:none;
+		width:auto;
+		padding-top:20px;
+	}
+	.boxes li {
+		float:none;
+		width:auto;
+		margin-right:0 !important;
+		padding:2%;
+		text-align:center;
+		border-bottom: 1px dotted #3d3b38;
+    	box-shadow: 0 1px #f7eec7;
+	}
+	nav ul { display: none; }
+	nav select { display: inline-block; }
+	
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	
+
+}
+/**************************/
+/*********************************End Media Queries****************************************/
+/**************************/
